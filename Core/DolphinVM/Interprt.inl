@@ -118,7 +118,7 @@ inline Oop Interpreter::popAndCountUp()
 // Functor to write a 32-bit positive integer to a stack location - used in primitives
 struct StoreUnsigned32
 {
-	__forceinline void operator()(Oop* const sp, uint32_t dwValue)
+	inline void operator()(Oop* const sp, uint32_t dwValue)
 	{
 		if (ObjectMemoryIsPositiveIntegerValue(dwValue))
 		{

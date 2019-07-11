@@ -45,3 +45,4 @@ UpgradeLog.htm
 *.VC.opendb
 *.VC.db
 DolphinBoot
+*.pgc

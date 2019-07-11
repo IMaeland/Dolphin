@@ -611,7 +611,7 @@ inline void ObjectMemory::countDown(Oop rootObjectPointer)
 	extern bool alwaysReconcileOnAdd;
 #endif
 
-__forceinline void __fastcall ObjectMemory::AddToZct(Oop oop)
+inline void __fastcall ObjectMemory::AddToZct(Oop oop)
 {
 	if (!ObjectMemoryIsIntegerObject(oop))
 	{

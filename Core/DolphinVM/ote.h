@@ -108,7 +108,7 @@ public:
 #endif
 	}
 
-	__forceinline void countDown()
+	inline void countDown()
 	{
 		HARDASSERT(m_count > 0);
 		if (m_count != MAXCOUNT)
@@ -151,7 +151,7 @@ public:
 	__forceinline OTEFlags::Spaces heapSpace() const		{ return static_cast<OTEFlags::Spaces>(m_flags.m_space); }
 	__forceinline bool flagsAllMask(BYTE mask) const		{ return (m_ubFlags & mask) == mask; }
 
-	__forceinline hash_t identityHash()
+	inline hash_t identityHash()
 	{
 		// This needs to be a loop in case nextIdentityHash ever returns zero
 		while (m_idHash == 0)
